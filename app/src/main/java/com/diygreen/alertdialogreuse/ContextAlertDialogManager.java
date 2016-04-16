@@ -98,9 +98,8 @@ public class ContextAlertDialogManager {
                 builder = createNewBuilder(context);
             }
         } else {
+            reset();
             builder = createNewBuilder(context);
-            sBuilder = null;
-            sLastContext = null;
             sLastContext = context;
             sBuilder = builder;
         }
@@ -112,6 +111,12 @@ public class ContextAlertDialogManager {
         // 设置Content来显示一个信息
         builder.setMessage(tipInfo.msg);
         return builder;
+    }
+
+    private static void reset() {
+        sBuilder = null;
+        sAlertDialog = null;
+        sLastContext = null;
     }
 
     @NonNull
@@ -160,9 +165,7 @@ public class ContextAlertDialogManager {
             sAlertDialog.cancel();
         }
         context = null;
-        sLastContext = null;
-        sBuilder = null;
-        sAlertDialog = null;
+        reset();
     }
 
     //==========逻辑方法==========//

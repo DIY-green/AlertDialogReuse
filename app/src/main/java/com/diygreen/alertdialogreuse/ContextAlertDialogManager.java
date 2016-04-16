@@ -13,7 +13,7 @@ import android.view.View;
 
 
 /**
- * Description: 提示信息显示工具类
+ * Description:
  * <br/>Program Name: 
  * <br/>Date: 2016年2月27日
  *

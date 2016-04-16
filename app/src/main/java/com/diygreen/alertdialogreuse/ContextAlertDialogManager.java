@@ -17,7 +17,7 @@ import android.view.View;
  * <br/>Program Name: 
  * <br/>Date: 2016年2月27日
  *
- * @author 李旺成    liwangcheng@jiashuangkuaizi.com
+ * @author 李旺成
  * @version 1.0
  */
 
